@@ -53,7 +53,7 @@ This Operator is built using the [Operator SDK](https://github.com/operator-fram
 
 ## Usage
 
-The first step is to deploy a pvc backed by a persisten volume where the InfluxDB data will be stored. Next you will deploy one file that will install the Operator, and install the manifest for InfluxDB.
+The first step is to deploy a pvc backed by a persistent volume where the InfluxDB data will be stored. Next you will deploy one file that will install the Operator, and install the manifest for InfluxDB.
 
 ### Persistent Volumes
 
@@ -209,7 +209,7 @@ You can have a look at the logs for troubleshooting if needed.
 you'll see something like this in logs 2018/11/14 18:17:03 Backups stored to s3://influxdb-backup-restore/backup/20181114181703 
 
 
-Note: 20181114181703 this is the directory name that stored the backup in S3 bucket . 
+Note: 20181114181703 this is the directory name that stored the backup in S3 bucket. 
 
 
 #### Use backups to restore a database from S3 Bucket
@@ -471,7 +471,7 @@ Ex : the yaml file below will restore the "testdb" database from /var/lib//backu
   
 
 ```
-  apiVersion: influxdata.com/v1alpha1
+apiVersion: influxdata.com/v1alpha1
 kind: Restore
 metadata:
   name: influxdb-restore
